@@ -9,7 +9,6 @@ const outputFolder = "output"
 // const path = require("path")
 // const esbuildCopy = require('esbuild-plugin-copy').default
 
-const esbuildOptions = { publicPath: "/bridgetown-gh-pages-demo/_bridgetown/static" }
 
 // const esbuildOptions = {
 //   plugins: [
@@ -29,6 +28,7 @@ const esbuildOptions = { publicPath: "/bridgetown-gh-pages-demo/_bridgetown/stat
 // ```
 // const esbuildOptions = { publicPath: "/my_subfolder/_bridgetown/static" }
 // ```
-const esbuildOptions = {}
+// const esbuildOptions = {}
+const esbuildOptions = { publicPath: "/bridgetown-gh-pages-demo/_bridgetown/static" }
 
 build(outputFolder, esbuildOptions)
